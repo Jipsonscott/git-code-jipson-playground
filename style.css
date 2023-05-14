@@ -5,7 +5,7 @@
 }
 
 .card {
-    border: 2px solid red;
+    box-shadow: 0 3px 4px black;
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -13,4 +13,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+button {
+    background-color: blue;
+    color: yellow;
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    background-color: blueviolet;
+    color: whitesmoke;
+    scale: 1.1;
 }
