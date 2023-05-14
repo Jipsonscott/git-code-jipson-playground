@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+}
+
 .card {
     box-shadow: 0 3px 4px black;
     width: 300px;
@@ -26,8 +30,48 @@ button {
     transition: all 0.2s ease-out;
 }
 
+
+.big-card {
+    transform: translatey(100%);
+    position: absolute;
+    background-image:  url(image/moutian.jpeg), linear-gradient(to right, red, yellow);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.big-card p {
+    color: purple;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 5rem 1rem;
+}
+
 button:hover {
     background-color: blueviolet;
     color: whitesmoke;
     scale: 1.1;
+    display: block;
+    color: brown;
+    border-radius: 4px;
+
+}
+
+.main{
+    transform: translatey(0%);
+}
+
+.times {
+    width: 34px;
+    height: 40px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
